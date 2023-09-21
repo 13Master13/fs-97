@@ -11,37 +11,44 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@500&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- Підключення Нормалайза -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
 		<!-- Підключення стилів -->
 		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
 	<body>
 		<!-- Хедер -->
 		<header>
-			<a href="./index.html">Mobileapp</a>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Features</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Testimonials</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
+			<div class="container">
+				<a href="./index.html">Mobileapp</a>
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<main>
 			<!-- Секция Main -->
-			<section>
-				<h1>Introducing Mobileapp</h1>
-				<p>Maecenas vitae tellus sapien. Prasent</p>
-				<ul>
-					<li>semper scelerisque tristique a enim</li>
-					<li>Integer ut mattis nulla, eget vehicula elit</li>
-					<li>Prasent rutrum ac nunc et</li>
-				</ul>
-				<button type="button">Download</button>
+			<section class="section">
+				<div class="container">
+					<h1>Introducing Mobileapp</h1>
+					<p>Maecenas vitae tellus sapien. Prasent</p>
+					<ul>
+						<li>semper scelerisque tristique a enim</li>
+						<li>Integer ut mattis nulla, eget vehicula elit</li>
+						<li>Prasent rutrum ac nunc et</li>
+					</ul>
+					<button type="button">Download</button>
+					<img src="./img/iPhone-g.jpg" alt="iPhone X">
+				</div>
 			</section>
 			<!-- Секція Key -->
-			<section>
+			<section class="section">
 				<h2>Key features</h2>
 				<ul>
 					<li>
@@ -85,16 +92,68 @@
 				</ul>
 			</section>
 			<!-- Секція Video -->
-			<section>
-				<h2>Watch the video</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+			<section class="section">
+				<div class="container">
+					<h2>Watch the video</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="./img/iPhone-v.jpg" alt="iPhone X">
+				</div>
 			</section>
-			<section></section>
-			<section></section>
+			<!-- Секція Team -->
+			<section class="section">
+				<div class="container">
+					<h2>Our team</h2>
+					<p>Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
+					<ul>
+						<li>
+							<img src="./img/jon-doe-1.jpg" alt="Jon Doe">
+							<h3>Jon Doe</h3>
+							<p>Managing Direcor</p>
+						</li>
+						<li>
+							<img src="./img/jane-doe-1.jpg" alt="Jane Doe">
+							<h3>Jane Doe</h3>
+							<p>Lead Designer</p>
+						</li>
+						<li>
+							<img src="./img/jane-doe-2.jpg" alt="Jane Doe">
+							<h3>Jane Doe</h3>
+							<p>Lead Developer</p>
+						</li>
+						<li>
+							<img src="./img/jon-doe-2.jpg" alt="Jon Doe">
+							<h3>Jon Doe</h3>
+							<p>Sr. UI Designer</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- Секція Costumers -->
+			<section class="section">
+				<h2>What our costumer`s say</h2>
+				<h3>Jon Doe</h3>
+				<p>Company Inc.</p>
+				<p>Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id </p>
+			</section>
 		</main>
 		<footer>
-			<h2>Contact us</h2>
-			<p>&#169; 2019 GoIteens Template. All Rights Reserved</p>
+			<div class="container">
+				<h2>Contact us</h2>
+				<h3>Get in touch with us</h3>
+				<p>Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla nulla sollicitudin tristique.</p>
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<address>
+					<ul>
+						<li><a href="tel:+xxxxxxxxxxxx">+xx-xxxx-xxxx-xx</a></li>
+						<li><a href="mailto:goIteens@gmail.com">goIteens@gmail.com</a></li>
+					</ul>
+				</address>
+				<p>&#169; 2019 GoIteens Template. All Rights Reserved</p>
+			</div>
 		</footer>
 	</body>
 </html>
