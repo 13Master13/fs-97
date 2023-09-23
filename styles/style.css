@@ -4,6 +4,8 @@
 	--c-white: #fff;
 	--c-black: #000;
 	--c-gray: #939eac;
+	--c-background: #06071b;
+	--lg-primary: linear-gradient(90deg, #00c5eb -1.97%, #b544fe 89.43%);
 }
 
 /* Глобальні налаштування */
@@ -67,17 +69,92 @@ img {
 
 .container {
 	width: 1236px;
+	padding: 0 16px;
 	margin: 0 auto;
 }
 
-.section {
+/* .section {
 	margin-top: 80px;
 	margin-bottom: 80px;
-}
+} */
 
 /* Хедер */
 
+.header {
+	position: absolute;
+	top: 26px;
+}
+
+.header-container {
+	background-image: linear-gradient(
+		90deg,
+		rgba(0, 197, 235, 0.3) -1.97%,
+		rgba(181, 68, 254, 0.3) 89.43%
+	);
+	backdrop-filter: blur(17.5px);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 19px;
+	padding-bottom: 19px;
+}
+
+.nav-list {
+	display: flex;
+	gap: 40px;
+}
+
+.header-link {
+	color: var(--c-white);
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.nav-item-link {
+	color: var(--c-white);
+	font-size: 12px;
+	font-weight: 400;
+}
+
 /* Секція Main */
+
+.main {
+	position: relative;
+	background-color: var(--c-background);
+	padding-top: 243px;
+	padding-bottom: 146px;
+}
+
+.main-title {
+	color: var(--c-white);
+	margin-bottom: 12px;
+}
+
+.main-text {
+	color: var(--c-white);
+	margin-bottom: 28px;
+}
+
+.main-list {
+	margin-bottom: 60px;
+}
+
+.main-item {
+	color: var(--c-white);
+}
+
+.main-button {
+	color: var(--c-white);
+	background-image: var(--lg-primary);
+	padding: 12px 60px;
+	border: none;
+	border-radius: 5px;
+}
+
+.main-image {
+	position: absolute;
+	border-color: var(--c-background);
+}
 
 /* Секція Key */
 
